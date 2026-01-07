@@ -20,32 +20,38 @@ pip install -r requirements.txt
 
 ## Usage
 
-### Rename a single photo:
+### Rename a single photo
+
 ```bash
 python photo_renamer.py /path/to/photo.jpg
 ```
 
-### Rename all photos in a directory:
+### Rename all photos in a directory
+
 ```bash
 python photo_renamer.py /path/to/photos/
 ```
 
-### Copy photos to output directory with new names:
+### Copy photos to output directory with new names
+
 ```bash
 python photo_renamer.py /path/to/photos/ -o /output/directory/ -c
 ```
 
-### Recursively process subdirectories:
+### Recursively process subdirectories
+
 ```bash
 python photo_renamer.py /path/to/photos/ -r
 ```
 
-### Use custom date format:
+### Use custom date format
+
 ```bash
 python photo_renamer.py /path/to/photos/ -f "%Y-%m-%d_%H-%M-%S"
 ```
 
-### Preview changes without making them (dry-run):
+### Preview changes without making them (dry-run)
+
 ```bash
 python photo_renamer.py /path/to/photos/ --dry-run
 ```
@@ -62,6 +68,7 @@ python photo_renamer.py /path/to/photos/ --dry-run
 ## Date Format Codes
 
 Common date format codes:
+
 - `%Y`: Year (4 digits, e.g., 2026)
 - `%m`: Month (01-12)
 - `%d`: Day (01-31)
